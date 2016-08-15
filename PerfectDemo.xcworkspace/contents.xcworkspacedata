@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:MySQL/MySQL.xcodeproj">
+      location = "group:SwiftSpider/SwiftSpider.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:PerfectDemo/PerfectDemo.xcodeproj">
@@ -12,5 +12,8 @@
    </FileRef>
    <FileRef
       location = "group:PerfectLib/PerfectLib.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MySQL/MySQL.xcodeproj">
    </FileRef>
 </Workspace>
