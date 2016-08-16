@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9060"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -674,14 +675,12 @@
                         <subviews>
                             <visualEffectView appearanceType="vibrantLight" fixedFrame="YES" blendingMode="behindWindow" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="6ua-th-fw2">
                                 <rect key="frame" x="0.0" y="0.0" width="470" height="271"/>
-                                <animations/>
                             </visualEffectView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="ada-Hf-fCn">
                                 <rect key="frame" x="20" y="62" width="430" height="40"/>
                                 <subviews>
                                     <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Y8v-Jh-XDU">
                                         <rect key="frame" x="121" y="12" width="179" height="22"/>
-                                        <animations/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" focusRingType="none" title="./webroot/" bezelStyle="round" id="E1F-kR-gXf">
                                             <font key="font" metaFont="system" size="14"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -693,7 +692,6 @@
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7z7-tj-Mm7">
                                         <rect key="frame" x="18" y="12" width="101" height="17"/>
-                                        <animations/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Document Root:" id="gy7-97-Ly8">
                                             <font key="font" metaFont="systemLight" size="13"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -706,7 +704,6 @@
                                             <constraint firstAttribute="width" constant="98" id="BAe-IB-FoR"/>
                                             <constraint firstAttribute="height" constant="24" id="eEC-G4-4ge"/>
                                         </constraints>
-                                        <animations/>
                                         <buttonCell key="cell" type="push" title="Choose…" bezelStyle="rounded" image="Down-circle" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="BUF-2B-Uvg">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="systemLight" size="13"/>
@@ -726,7 +723,6 @@
                                     <constraint firstAttribute="trailing" secondItem="FdI-BE-zKa" secondAttribute="trailing" constant="20" id="U4Z-LI-eMf"/>
                                     <constraint firstItem="FdI-BE-zKa" firstAttribute="leading" secondItem="Y8v-Jh-XDU" secondAttribute="trailing" constant="12" id="wAv-Zo-8eO"/>
                                 </constraints>
-                                <animations/>
                             </customView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RHm-AV-UR6">
                                 <rect key="frame" x="200" y="187" width="70" height="70"/>
@@ -734,12 +730,10 @@
                                     <constraint firstAttribute="height" constant="70" id="2q1-eU-chT"/>
                                     <constraint firstAttribute="width" constant="70" id="p1X-pX-390"/>
                                 </constraints>
-                                <animations/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="AppIcon" id="Nvy-Bg-vcn"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="m6M-KF-Wwe">
                                 <rect key="frame" x="131" y="154" width="209" height="29"/>
-                                <animations/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Perfect Server HTTP" id="jND-mY-mtV">
                                     <font key="font" size="24" name=".AppleSystemUIFontThin"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -751,7 +745,6 @@
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xsg-Tc-BAy">
                                         <rect key="frame" x="18" y="14" width="75" height="17"/>
-                                        <animations/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Server Port:" id="o1t-1Q-upd">
                                             <font key="font" metaFont="systemThin" size="13"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -763,7 +756,6 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="96" id="W6G-qx-CLv"/>
                                         </constraints>
-                                        <animations/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" focusRingType="none" title="8181" bezelStyle="round" id="ipb-JC-mvZ">
                                             <font key="font" metaFont="system" size="14"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -778,7 +770,6 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="96" id="phZ-t4-Ri4"/>
                                         </constraints>
-                                        <animations/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" focusRingType="none" title="0.0.0.0" bezelStyle="round" id="ar1-w4-iJq">
                                             <font key="font" metaFont="system" size="14"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -790,7 +781,6 @@
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LWG-AW-bl5">
                                         <rect key="frame" x="208" y="14" width="100" height="17"/>
-                                        <animations/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Server Address:" id="VHc-iN-eZC">
                                             <font key="font" metaFont="systemLight" size="13"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -809,21 +799,18 @@
                                     <constraint firstItem="b81-uc-1hK" firstAttribute="leading" secondItem="LWG-AW-bl5" secondAttribute="trailing" constant="8" id="vBg-Hc-kB7"/>
                                     <constraint firstAttribute="trailing" secondItem="b81-uc-1hK" secondAttribute="trailing" constant="20" id="zwX-e3-CQ5"/>
                                 </constraints>
-                                <animations/>
                             </customView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="Fsh-Xl-7Ln">
                                 <rect key="frame" x="74" y="16" width="323" height="40"/>
                                 <subviews>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="uZC-wD-sGy" userLabel="Start Stop Color Background">
                                         <rect key="frame" x="11" y="4" width="111" height="32"/>
-                                        <animations/>
                                     </customView>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="O48-cy-u9A">
                                         <rect key="frame" x="20" y="4" width="95" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="eBk-HA-7Zq"/>
                                         </constraints>
-                                        <animations/>
                                         <buttonCell key="cell" type="bevel" title="Start Server" bezelStyle="rounded" image="Stop-circle" imagePosition="right" alignment="center" imageScaling="proportionallyDown" inset="2" id="3bH-bt-jfc">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="systemLight" size="13"/>
@@ -832,16 +819,14 @@
                                             <action selector="toggleServer:" target="XfG-lQ-9wD" id="Weh-c5-MrP"/>
                                         </connections>
                                     </button>
-                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="MrJ-F2-hS7" userLabel="Url Color Background">
+                                    <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MrJ-F2-hS7" userLabel="Url Color Background">
                                         <rect key="frame" x="149" y="4" width="164" height="32"/>
-                                        <animations/>
                                     </customView>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MYJ-7i-P98">
+                                    <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MYJ-7i-P98">
                                         <rect key="frame" x="153" y="4" width="150" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="mDz-px-RhP"/>
                                         </constraints>
-                                        <animations/>
                                         <buttonCell key="cell" type="bevel" title="http://localhost:8181/" bezelStyle="regularSquare" image="Go-circle" imagePosition="right" alignment="center" imageScaling="proportionallyDown" inset="2" id="WD2-Kd-UJ0">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="systemLight" size="13"/>
@@ -866,7 +851,6 @@
                                     <constraint firstItem="MrJ-F2-hS7" firstAttribute="width" secondItem="MYJ-7i-P98" secondAttribute="width" constant="14" id="rGK-gP-9fo"/>
                                     <constraint firstItem="uZC-wD-sGy" firstAttribute="height" secondItem="O48-cy-u9A" secondAttribute="height" id="x1x-MA-ZHx"/>
                                 </constraints>
-                                <animations/>
                             </customView>
                         </subviews>
                         <constraints>
@@ -884,7 +868,6 @@
                             <constraint firstItem="Fsh-Xl-7Ln" firstAttribute="height" secondItem="ada-Hf-fCn" secondAttribute="height" id="tKp-Oa-eno"/>
                             <constraint firstAttribute="trailing" secondItem="UdY-lZ-nuY" secondAttribute="trailing" constant="20" id="wBI-P0-mgk"/>
                         </constraints>
-                        <animations/>
                     </view>
                     <connections>
                         <outlet property="addressTextField" destination="b81-uc-1hK" id="zbo-Tg-LAW"/>
