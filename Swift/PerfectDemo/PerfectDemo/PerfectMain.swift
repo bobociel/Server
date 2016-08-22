@@ -48,22 +48,6 @@ class IndexHandler: RequestHandler {
             return
         }
 
-        guard mySql.query("CREATE TABLE IF NOT EXISTS user (id INTEGER PRIMARY KEY," +
-            "user_id varchar(20) NOT NULL UNIQUE, name varchar(20),avatar TEXT,psw TEXT) ")else{
-                print("[\(#line)]: Failure: \(mySql.errorCode()) \(mySql.errorMessage())")
-                return
-        }
-
-        let userID = "111"
-        let name = "🐻"
-        let avatar = "熊"
-        let psw = "666666"
-
-        guard mySql.query("REPLACE INTO user (user_id, name, avatar, psw) values (\(userID),\(name),\(avatar),\(psw))") else{
-                print("[\(#line)]: Failure: \(mySql.errorCode()) \(mySql.errorMessage())")
-                return
-        }
-
         guard mySql.selectDatabase(mySqlDB) && mySql.query("select * from user") else{
             print("[\(#line)]: Failure: \(mySql.errorCode()) \(mySql.errorMessage())")
             return
@@ -71,8 +55,10 @@ class IndexHandler: RequestHandler {
 
         let result = mySql.storeResults()
         var dataArray = [String]()
-        for rs in (result?.next())!{
-            dataArray.append(rs)
+        for n in 0..<result!.numRows(){
+            for rs in (result?.next())!{
+                dataArray.append(rs)
+            }
         }
 
         response.appendBodyString("database:\(mySql.listDatabases()),tables,\(mySql.listTables()).\(dataArray.debugDescription)")
@@ -84,7 +70,19 @@ class IndexHandler: RequestHandler {
 }
 
 
+/* 创建表 */
+//        guard mySql.query("CREATE TABLE IF NOT EXISTS user (id INTEGER PRIMARY KEY," +
+//            "user_id varchar(20) NOT NULL UNIQUE, name varchar(20),avatar TEXT,psw TEXT) ")else{
+//                print("[\(#line)]: Failure: \(mySql.errorCode()) \(mySql.errorMessage())")
+//                return
+//        }
 
+/* 更新数据 */
+//let sqlStr = "REPLACE INTO user (id,user_id, name, avatar, psw) values ('666','666','liuliu','liuliu','666666')"
+//guard mySql.query(sqlStr) else{
+//    print("[\(#line)]: Failure: \(mySql.errorCode()) \(mySql.errorMessage())")
+//    return
+//}
 
 
 
