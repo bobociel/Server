@@ -1,0 +1,255 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		F02B139A1D6AC7D5008E53F1 /* app.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = app.py; sourceTree = "<group>"; };
+		F02B139B1D6AC7D5008E53F1 /* orm2.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = orm2.py; sourceTree = "<group>"; };
+		F02B139C1D6AC80D008E53F1 /* models.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = models.py; sourceTree = "<group>"; };
+		F02B139D1D6AC9F2008E53F1 /* scheme.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scheme.sql; sourceTree = "<group>"; };
+		F02B139F1D6AE0A8008E53F1 /* orm.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = orm.py; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		F02B13811D6AA271008E53F1 = {
+			isa = PBXGroup;
+			children = (
+				F02B13951D6AA31B008E53F1 /* www */,
+				F02B13911D6AA31B008E53F1 /* backup */,
+				F02B13921D6AA31B008E53F1 /* conf */,
+				F02B13931D6AA31B008E53F1 /* dist */,
+				F02B13941D6AA31B008E53F1 /* ios */,
+			);
+			sourceTree = "<group>";
+		};
+		F02B13911D6AA31B008E53F1 /* backup */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = backup;
+			sourceTree = "<group>";
+		};
+		F02B13921D6AA31B008E53F1 /* conf */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = conf;
+			sourceTree = "<group>";
+		};
+		F02B13931D6AA31B008E53F1 /* dist */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = dist;
+			sourceTree = "<group>";
+		};
+		F02B13941D6AA31B008E53F1 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		F02B13951D6AA31B008E53F1 /* www */ = {
+			isa = PBXGroup;
+			children = (
+				F02B139A1D6AC7D5008E53F1 /* app.py */,
+				F02B139F1D6AE0A8008E53F1 /* orm.py */,
+				F02B139B1D6AC7D5008E53F1 /* orm2.py */,
+				F02B139C1D6AC80D008E53F1 /* models.py */,
+				F02B139D1D6AC9F2008E53F1 /* scheme.sql */,
+				F02B13961D6AA31B008E53F1 /* static */,
+				F02B13971D6AA31B008E53F1 /* templates */,
+			);
+			path = www;
+			sourceTree = "<group>";
+		};
+		F02B13961D6AA31B008E53F1 /* static */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+		F02B13971D6AA31B008E53F1 /* templates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = templates;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		F02B13861D6AA271008E53F1 /* PythonServerDemo */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = F02B13891D6AA271008E53F1 /* Build configuration list for PBXLegacyTarget "PythonServerDemo" */;
+			buildPhases = (
+			);
+			buildToolPath = /Library/Frameworks/Python.framework/Versions/3.5/bin/python3;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = PythonServerDemo;
+			passBuildSettingsInEnvironment = 1;
+			productName = PythonServerDemo;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		F02B13821D6AA271008E53F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = com.lovewith.lovewith;
+				TargetAttributes = {
+					F02B13861D6AA271008E53F1 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F02B13851D6AA271008E53F1 /* Build configuration list for PBXProject "PythonServerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F02B13811D6AA271008E53F1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F02B13861D6AA271008E53F1 /* PythonServerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		F02B13871D6AA271008E53F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		F02B13881D6AA271008E53F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		F02B138A1D6AA271008E53F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F02B138B1D6AA271008E53F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F02B13851D6AA271008E53F1 /* Build configuration list for PBXProject "PythonServerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F02B13871D6AA271008E53F1 /* Debug */,
+				F02B13881D6AA271008E53F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F02B13891D6AA271008E53F1 /* Build configuration list for PBXLegacyTarget "PythonServerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F02B138A1D6AA271008E53F1 /* Debug */,
+				F02B138B1D6AA271008E53F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F02B13821D6AA271008E53F1 /* Project object */;
+}

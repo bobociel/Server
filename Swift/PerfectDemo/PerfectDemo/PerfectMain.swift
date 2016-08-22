@@ -16,10 +16,10 @@ import MySQL
 
 let mySql     = MySQL()
 let mySqlStmt = MySQLStmt(mySql)
-let mySqlHost = "192.168.1.124"
-let mySqlUser = "wxb"
-let mySqlPsw  = "123456"
-let mySqlDB   = "xiaobo"
+let mySqlHost = "127.0.0.1"
+let mySqlUser = "root"
+let mySqlPsw  = "Love9999"
+let mySqlDB   = "swiftDemo"
 let mySqlPort: UInt32 = 3306
 
 public func PerfectServerModuleInit() {
